@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blood Pressure Tracker</title>
+    <!-- Add Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+  </head>
+  <body>
+    <h1>Blood Pressure Tracker</h1>
+    <form id="bp-form">
+      <label for="systolic">Systolic:</label>
+      <input type="number" id="systolic" required>
+      <label for="diastolic">Diastolic:</label>
+      <input type="number" id="diastolic" required>
+      <label for="pulse">Pulse:</label>
+      <input type="number" id="pulse" required>
+      <label for="note">Note:</label>
+      <textarea id="note"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <button id="show-last-5">Show Last 5 Records</button>
+    <button id="download-data">Download Data</button>
+    <ul id="bp-list"></ul>
+
+    <!-- Add your JavaScript file -->
+    <script src="app.js"></script>
+  </body>
+</html>
